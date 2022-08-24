@@ -1,4 +1,4 @@
-.loaded {
+/*.loaded {
   .main-wrapper {
     display: none;
   }
@@ -6,10 +6,20 @@
   .icon-load {
     display: block;
   }
+}*/
+
+.preload-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 1000;
 }
 
 .icon-load {
-  display: none;
+  //display: none;
   position: fixed;
   top: 50%;
   left: 50%;

@@ -10,6 +10,7 @@ import noUiSlider from 'nouislider';
 
 $(window).on('load', function () {
     let b = $('body');
+    let pw = $('.preload-wrapper');
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         b.addClass('ios');
@@ -17,7 +18,7 @@ $(window).on('load', function () {
         b.addClass('web');
     }
 
-    b.removeClass('loaded');
+    pw.fadeOut(300);
 });
 
 $(function () {
