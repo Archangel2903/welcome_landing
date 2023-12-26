@@ -1,3 +1,8 @@
+:root {
+  --black: #000000;
+  --font-size-default: 16px;
+}
+
 // main colors
 $main-first-color: #7a0000;
 $main-second-color: #007d00;
@@ -5,11 +10,11 @@ $main-third-color: #000082;
 
 // colors
 $title-color: #111;
-$text-color: #333;
+$text-color: #fff;
 $input-placeholder-color: #aaa;
 
 // fonts
-$font-family-base: 'Verdana', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 $font-family-custom: 'Arial', sans-serif;
 $font-family-unique: 'Times New Roman', serif;
 
@@ -18,7 +23,7 @@ $font-weight-medium: 500;
 $font-weight-sbold: 600;
 
 // font-size
-$font-size-default: 16px;
+$font-size-default: var(--font-size-default);
 $line-height-base: 1.25;
 
 // behavior
@@ -27,3 +32,24 @@ $transition-base: all .3s ease 0s;
 //Bootstrap var
 $enable-shadows: true;
 $body-color: $text-color;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 320px,
+        md: 767px,
+        lg: 920px,
+        xl: 1200px,
+        xxl: 1600px,
+        xxxl: 1920px,
+        xxxxl: 2560px,
+);
+
+$container-max-widths: (
+        sm: 100%,
+        md: 100%,
+        lg: 830px,
+        xl: 1200px,
+        xxl: 1430px,
+        xxxl: 1600px,
+        xxxxl: 1920px,
+);

@@ -4,6 +4,7 @@
 /***********************************************************
 *************************** RESET **************************
 ***********************************************************/
+
 * {
   box-sizing: border-box;
 
@@ -19,6 +20,8 @@ html, body {
   text-size-adjust: none;
   font-family: $font-family-base;
   font-size: $font-size-default;
+  line-height: 1;
+  background: var(--black);
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
@@ -301,6 +304,10 @@ nav ol, nav ul, ol, ul {
 
 iframe {
   border: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1;
 }
 
 ::selection {

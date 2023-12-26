@@ -9,108 +9,102 @@
 <body>
 <!-- BODY -->
 <div class="main-wrapper">
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container bg-light">
-            <h1>Header Title</h1>
-        </div>
-    </header>
-    <!-- HEADER END -->
-
     <!-- CONTENT -->
     <main class="content">
-        <div class="section">
-            <div class="container">
-                <h2>Section Slider</h2>
+        <section class="section welcome-section">
+            <div class="container position-relative">
+                <div class="welcome-section__content-wrapper">
+                    <picture class="welcome-section__image">
+                        <source media="(min-width: 1600px)" srcset="<%= require('./img/welcome-image.png') %>">
 
-                <div class="main-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
-                            </picture>
-                        </div>
+                        <source media="(min-width: 920px)" srcset="<%= require('./img/welcome-image_md.png') %>">
 
-                        <div class="swiper-slide">
-                            <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
-                            </picture>
-                        </div>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/welcome-image_sm.png') %>" alt="" title="">
+                    </picture>
 
-                        <div class="swiper-slide">
-                            <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                    <div class="welcome-section__content">
+                        <a href="/" class="welcome-section__logo">
+                            <picture class="welcome-section__logo-img">
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/logo.svg') %>" alt="logo" title="logo">
                             </picture>
-                        </div>
+                        </a>
 
-                        <div class="swiper-slide">
-                            <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
-                            </picture>
-                        </div>
+                        <div class="welcome-section__text-block">
+                            <h1 class="welcome-section__title">Welcome Bonus</h1>
 
-                        <div class="swiper-slide">
-                            <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
-                            </picture>
+                            <p class="welcome-section__sub-title-text">Catch Your Winning Reflection</p>
+
+                            <div class="welcome-section__offer">
+                                <p class="welcome-section__offer-title">GET up to</p>
+                                <p class="welcome-section__offer-text"><span>1500</span>$
+                                    +
+                                    <span>150</span>FS</p>
+                            </div>
+
+                            <a href="#" class="welcome-section__button btn-style"><span>Play now!</span></a>
                         </div>
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!--<div class="swiper-scrollbar"></div>-->
                 </div>
             </div>
-        </div>
 
-        <div class="section">
+            <picture class="welcome-section__image-decor">
+                <source media="(min-width: 1600px)" srcset="<%= require('./img/lights.png') %>">
+                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/lights_sm.png') %>" alt="" title="">
+            </picture>
+        </section>
+
+        <section class="section game-section">
             <div class="container">
-                <h2>Section Pictures</h2>
-                <picture>
-                    <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="loader" title="loader">
-                </picture>
-
-                <svg>
-                    <use xlink:href="img/spritemap.svg#sprite-ok"></use>
-                </svg>
+                <div class="game-section__content">
+                    <div class="game-section__card">
+                        <picture class="game-section__image">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/game_01.png') %>" alt="" title="">
+                        </picture>
+                    </div>
+                    <div class="game-section__card">
+                        <picture class="game-section__image">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/game_02.png') %>" alt="" title="">
+                        </picture>
+                    </div>
+                    <div class="game-section__card">
+                        <picture class="game-section__image">
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/game_03.png') %>" alt="" title="">
+                        </picture>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="section">
-            <div class="container">
-                <h2>Section Range slider</h2>
-
-                <div class="slider-range"><input type="range" value="75" min="1" max="100"></div>
-                <div class="slider-range"><input type="range" value="275" max="1000"></div>
-                <div class="slider-range"><input type="range"></div>
-
-                <br>
-
-                <div class="slider-handles"><input type="range" min="2000" max="10000"></div>
-                <div class="slider-handles"><input type="range" max="1000"></div>
-                <div class="slider-handles"><input type="range"></div>
-            </div>
-        </div>
+        </section>
     </main>
     <!-- CONTENT END -->
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container bg-info">
-            <h3 class="m-0">Footer Title</h3>
+        <div class="container">
+            <div class="payment-method">
+                <div class="payment-method__item">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/visa.svg') %>" alt="" title="">
+                    </picture>
+                </div>
+                <div class="payment-method__item">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/mastercard.svg') %>" alt="" title="">
+                    </picture>
+                </div>
+                <div class="payment-method__item">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/googlePay.svg') %>" alt="" title="">
+                    </picture>
+                </div>
+                <div class="payment-method__item">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/applePay.svg') %>" alt="" title="">
+                    </picture>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- FOOTER END -->
-</div>
-
-<div class="preload-wrapper">
-    <div class="icon-load">
-        <picture><img src="<%= require('./img/loader.svg') %>" alt="pre-loader"></picture>
-    </div>
 </div>
 <!-- BODY END   -->
 </body>
