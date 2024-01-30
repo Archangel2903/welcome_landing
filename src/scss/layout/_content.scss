@@ -55,6 +55,11 @@
   }
 
   &__text-block {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
   }
 

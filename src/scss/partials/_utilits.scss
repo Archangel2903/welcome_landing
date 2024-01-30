@@ -88,11 +88,6 @@
     background-clip: text;
   }
 
-  &:hover {
-    box-shadow: 0 20px 120px 0 rgba(245, 184, 50, 0.80);
-    text-decoration: none;
-  }
-
   &::before {
     content: '';
     position: absolute;
@@ -116,5 +111,10 @@
     border-radius: 750px;
     transform: translate(-50%, -50%);
     z-index: -1;
+  }
+
+  &:hover {
+    box-shadow: 0 20px 120px 0 rgba(245, 184, 50, 0.80);
+    text-decoration: none;
   }
 }
